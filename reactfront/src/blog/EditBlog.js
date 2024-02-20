@@ -10,14 +10,13 @@ const CompEditBlogs = () => {
     const [content, setContent] = useState('');
     const navigate = useNavigate()
     const {id} = useParams()
-
     const update = async (e) => {
         e.preventDefault()
         await axios.put(URI+id, {
             title: title,
             content: content,
         })
-        navigate('/')
+        navigate('/blogs')
     }
 
     useEffect(() => {

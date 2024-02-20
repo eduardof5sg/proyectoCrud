@@ -27,21 +27,6 @@ export const getBlog = async(req, res) => {
     }
 }
 
-// Crear un nuevo registro 
-
-// export const createBlog = async (req, res) => {
-//     try {
-//        await BlogModel.create(req.body)
-//        res.json({
-//         "message":  "!Registro creado correctamente"
-//        })
-//     } catch (error) {
-//         res.json( {message: error.message})        
-//     }
-// }
-
-
-
 export const createBlog = async (req, res) => {
     try {
         // Ejecuta uploadImage para manejar la carga de la imagen
