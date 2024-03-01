@@ -24,7 +24,7 @@ app.get('/', (req,res)=> {
 app.use('/uploads', express.static('uploads'));
 
 app.listen(8000, ()=>{
-    console.log('server Up running in http://localhost:8000/')
+    console.log('server Up running in host')
 })
 
 
